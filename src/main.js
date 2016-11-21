@@ -27,6 +27,7 @@ window.router = router
 //   template: '<App/>',
 //   components: { App }
 // })
+// https://github.com/lzxb/vue2-demo
 const app = new Vue({
     el: '#app',
     router,
