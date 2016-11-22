@@ -1,26 +1,13 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import Vuex from 'vuex'
+// import store from './store'
 
-import routes from './routers'
+import router from './routers'
 import App from './App'
 
-Vue.use(VueRouter)
-Vue.use(VueResource)
-Vue.use(Vuex)
 
-const router = new VueRouter({
-	routes: routes,
-	scrollBehavior (to, from, savedPosition) {
-	  if (savedPosition) {
-	    return savedPosition
-	  } else {
-	    return { x: 0, y: 0 }
-	  }
-	}
-})
-window.router = router
+Vue.use(VueResource)
+
 /* eslint-disable no-new */
 // new Vue({
 //   el: '#app',

@@ -2,15 +2,24 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>123232323</h2>
+
+    <div><button @click="showConsole()">show</button></div>
   </div>
 </template>
 
 <script>
+import Router from '../routers'
 export default {
   name: 'Foo',
   data () {
     return {
       msg: 'Foo'
+    }
+  },
+  methods: {
+    showConsole () {
+      console.log(Router)
+      Router.push('/bar')
     }
   }
 }
