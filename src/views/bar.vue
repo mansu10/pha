@@ -2,10 +2,20 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>123232323</h2>
+    <ul>
+      <li v-for="p in products">
+        {{ p.title }} - {{ p.price }}
+        <br>
+        <button>
+          Add to cart
+        </button>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'Foo',
   data () {
