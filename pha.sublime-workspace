@@ -1,0 +1,1246 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sw",
+				"stowageList"
+			],
+			[
+				"res",
+				"restrict"
+			],
+			[
+				"print",
+				"printList"
+			],
+			[
+				"item",
+				"itemId"
+			],
+			[
+				"stat",
+				"stateParams"
+			],
+			[
+				"loca",
+				"localstorage"
+			],
+			[
+				"te",
+				"test\tQUnit test"
+			],
+			[
+				"pas",
+				"parseInt"
+			],
+			[
+				"pri",
+				"printOrders"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"_",
+				"_start"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"innerH",
+				"innerHTML"
+			],
+			[
+				"background-si",
+				"background-size"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"cl",
+				"class\tAttr"
+			],
+			[
+				"ch",
+				"checkedOrder"
+			],
+			[
+				"apd",
+				"appendTo\t.appendTo()"
+			],
+			[
+				"ox",
+				"ovx-s\toverflow-x: scroll;"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"ve",
+				"vehicleList"
+			],
+			[
+				"iptS",
+				"iptState"
+			],
+			[
+				"cls",
+				"classList"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"templa",
+				"templateUrl"
+			],
+			[
+				"tem",
+				"templateUrl"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"buil",
+				"buildJS"
+			],
+			[
+				"im",
+				"images/"
+			],
+			[
+				"bul",
+				"bundle"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"vi",
+				"v-link\t<a v-link=\"\">"
+			],
+			[
+				"comp",
+				"component"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"mi",
+				"min-width"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"aciv",
+				"activeList"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"parent",
+				"parents\t.parents()"
+			],
+			[
+				"th",
+				"thk.png\tw:478 h:278"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"pla",
+				"plate.png\tw:563 h:274"
+			],
+			[
+				"slid",
+				"slideUp\t.slideUp()"
+			],
+			[
+				"tx",
+				"text-align"
+			],
+			[
+				"css",
+				"css\t.css() - single"
+			],
+			[
+				"ic",
+				"icon_01.png\tw:100 h:100"
+			],
+			[
+				"on",
+				"on\t.on()"
+			],
+			[
+				"l",
+				"line-3.png\tw:371 h:353"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"in",
+				"inside"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"mag",
+				"margin-left"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"mouse",
+				"mouseout\t.mouseout()"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"toggl",
+				"toggleClass\t.toggleClass()"
+			],
+			[
+				"r",
+				"remodal.css"
+			],
+			[
+				"arr",
+				"arrow-left.png\tw:18 h:33"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"zepto",
+				"zepto-1.2.min.js"
+			],
+			[
+				"re",
+				"ren2.png\tw:485 h:177"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"b",
+				"bg6.jpg\tw:640 h:1136"
+			],
+			[
+				"fot",
+				"font-weight"
+			],
+			[
+				"backgoru",
+				"background-size"
+			],
+			[
+				"bacgrou",
+				"background-size"
+			],
+			[
+				"scr",
+				"screen-4/"
+			],
+			[
+				"se",
+				"screen-4/"
+			],
+			[
+				"p3",
+				"p3-logo.png\tw:66 h:60"
+			],
+			[
+				"p",
+				"p1-logo.png\tw:286 h:62"
+			],
+			[
+				"p4",
+				"p4-logo.png\tw:291 h:62"
+			],
+			[
+				"ini",
+				"initInst"
+			],
+			[
+				"init",
+				"initGallery"
+			],
+			[
+				"remodal",
+				"remodal.min.js"
+			],
+			[
+				"PA",
+				"PAGE_EIGHT_FLAG"
+			],
+			[
+				"PAGE",
+				"PAGE_SEVEN_FLAG"
+			],
+			[
+				"app",
+				"append\t.append()"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"page",
+				"pageOneCap"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"ready",
+				"ready\t$(document).ready"
+			],
+			[
+				"11",
+				"20151126_2.png\tw:109 h:109"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"fa",
+				"family5.jpg\tw:139 h:223"
+			],
+			[
+				"fam",
+				"family-5.gif\tw:963 h:148"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"contai",
+				"container"
+			],
+			[
+				"get",
+				"get\t$.get()"
+			],
+			[
+				"cons",
+				"constructor"
+			],
+			[
+				"onmou",
+				"onmousedown"
+			],
+			[
+				"stop",
+				"stopPropagation()\tEvent"
+			],
+			[
+				"function",
+				"description-Function"
+			],
+			[
+				"fotn",
+				"font-size"
+			],
+			[
+				"marg",
+				"marginL"
+			],
+			[
+				"animate",
+				"animate\t.animate()"
+			],
+			[
+				"posi",
+				"posiIndex"
+			],
+			[
+				"curr",
+				"currPosi"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"tit",
+				"titleWrap"
+			],
+			[
+				"inner",
+				"innerWrap"
+			],
+			[
+				"titl",
+				"titleWidth"
+			],
+			[
+				"tri",
+				"trigger\t.trigger()"
+			],
+			[
+				"sport",
+				"sports-guide-running.html"
+			],
+			[
+				"docu",
+				"document"
+			],
+			[
+				"onmouse",
+				"onmousemove"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"wdi",
+				"width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"win",
+				"winWidth"
+			],
+			[
+				"out",
+				"outerH"
+			],
+			[
+				"remove",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"ou",
+				"outerH"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main.js",
+			"settings":
+			{
+				"buffer_size": 470,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<template>\n  <div class=\"hello\">\n\t<h1>{{ msg }}</h1>\n\t<h2>123232323</h2>\n\t<ul>\n\t  <li v-for=\"p in products\">\n\t\t{{ p.title }} - {{ p.price }}\n\t\t<br>\n\t\t<button>\n\t\t  Add to cart\n\t\t</button>\n\t  </li>\n\t</ul>\n  </div>\n</template>\n\n<script>\nimport { mapGetters, mapActions } from 'vuex'\nexport default {\n  name: 'Foo',\n  data () {\n\treturn {\n\t  msg: 'bar'\n\t}\n  }\n}\n</script>\n\n<!-- Add \"scoped\" attribute to limit CSS to this component only -->\n<style scoped>\nh1, h2 {\n  font-weight: normal;\n}\n\nul {\n  list-style-type: none;\n  padding: 0;\n}\n\nli {\n  display: inline-block;\n  margin: 0 10px;\n}\n\na {\n  color: #42b983;\n}\n</style>\n",
+			"file": "src/views/bar.vue",
+			"file_size": 674,
+			"file_write_time": 131246126550000000,
+			"settings":
+			{
+				"buffer_size": 617,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/routers.js",
+			"settings":
+			{
+				"buffer_size": 529,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "packre",
+		"selected_items":
+		[
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Commit history"
+			],
+			[
+				"packi",
+				"Package Control: Install Package"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"git:pull",
+				"Git: Pull"
+			],
+			[
+				"git:push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git:c",
+				"Git: Commit"
+			],
+			[
+				"git:add",
+				"Git: Add All"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"n m p",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"aut",
+				"Autoprefix CSS"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"packen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packdisa",
+				"Package Control: Disable Package"
+			],
+			[
+				"bl",
+				"Toggle Block Comment"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"doc",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			],
+			[
+				"pagck",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Javascript Beautify"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 320.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rain/Documents/projects/git/pha",
+		"/Users/rain/Documents/projects/git/pha/src",
+		"/Users/rain/Documents/projects/git/pha/src/store",
+		"/Users/rain/Documents/projects/git/pha/src/views"
+	],
+	"file_history":
+	[
+		"/Users/rain/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rain/Downloads/运输管理/findOperatorByPosition.html",
+		"/Users/rain/Downloads/运输管理/findStowageByCode.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/allocate.check.html",
+		"/Users/rain/Downloads/运输管理/updateStowageItems.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/collectStorageCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/headerCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/transDispatchCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/index.js",
+		"/Users/rain/Documents/projects/git/med/index.html",
+		"/Users/rain/Documents/projects/git/med/sftp-config.json",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/trans.dispatch.html",
+		"/Users/rain/Documents/projects/git/med/src/template/header.html",
+		"/Users/rain/Documents/projects/git/med/src/css/style.css",
+		"/Users/rain/Downloads/sftp-config.json",
+		"/Users/rain/Documents/projects/git/med/src/js/url.js",
+		"/Users/rain/Downloads/运输管理/updateCarStatusByCode.html",
+		"/Users/rain/Downloads/运输管理/findStowageCodesByCarCode.html",
+		"/Users/rain/Documents/projects/git/pha/src/store/index.js",
+		"/Users/rain/Documents/projects/git/pha/src/routers.js",
+		"/Users/rain/Documents/projects/git/pha/src/views/foo.vue",
+		"/Users/rain/Documents/projects/git/pha/src/main.js",
+		"/Users/rain/Documents/projects/git/pha/src/components/head.vue",
+		"/Users/rain/Documents/projects/git/pha/src/views/bar.vue",
+		"/Users/rain/Documents/projects/git/pha/src/App.vue",
+		"/Users/rain/Documents/projects/git/vuex-dev/examples/counter-hot/store/actions.js",
+		"/Users/rain/Documents/projects/git/vuex-dev/examples/shopping-cart/store/index.js",
+		"/Users/rain/Documents/projects/git/vue-shopping-master/package.json",
+		"/Users/rain/Documents/projects/git/vue-shopping-master/src/views/goods/swipe.vue",
+		"/Users/rain/Documents/projects/git/pha/.gitignore",
+		"/Users/rain/.ssh/id_rsa_v.pub",
+		"/Users/rain/.ssh/config",
+		"/Users/rain/Documents/projects/blog/hexo_blog/.git/config",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/allocateChecktCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/app.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/collectSupplementCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/dicSIngleCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/service/service.js",
+		"/Users/rain/Documents/projects/git/med/src/js/directives/directives.js",
+		"/Users/rain/Documents/projects/git/med/lib/angular/angular.min.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/allocateGoodsCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/indexCtrl.js",
+		"/Users/rain/Documents/projects/git/pha/package.json",
+		"/Users/rain/Documents/projects/git/Vue-cnodejs-master/src/routers.js",
+		"/Users/rain/Documents/projects/git/vue-shopping-master/src/app.js",
+		"/Users/rain/Documents/projects/git/pha/index.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/trans.line.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/transVehicleCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/allocate.goods.print.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/load.query.print.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/allocate.goods.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/trans.vehicle.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/load.query.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/sideNavCtrl.js",
+		"/Users/rain/Downloads/queryAllCarsWithStatus.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/printCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/allocate.check.print.html",
+		"/Users/rain/Documents/projects/git/med/src/css/print.css",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/loadQueryCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/print.html",
+		"/Users/rain/Documents/projects/git/med/src/template/content.html",
+		"/Users/rain/Documents/projects/git/med/src/template/sidenav.html",
+		"/Users/rain/Documents/projects/git/med/src/template/home.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/orderAuditCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/orderAddCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/transLineCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/trans.area.html",
+		"/Users/rain/Documents/projects/git/Vue-cnodejs-master/src/main.js",
+		"/Users/rain/Documents/projects/git/vue-proj/src/routers/router.js",
+		"/Users/rain/Documents/projects/git/vue-proj/src/main.js",
+		"/Users/rain/Documents/projects/git/vue-proj/index.html",
+		"/Users/rain/Documents/projects/git/vue-proj/src/views/Bar.vue",
+		"/Users/rain/Documents/projects/git/vue-proj/src/views/Foo.vue",
+		"/Users/rain/Documents/projects/git/vue-proj/src/App.vue",
+		"/Users/rain/Documents/projects/git/vue-proj/src/components/Hello.vue",
+		"/Users/rain/Documents/projects/git/vue-proj/src/libs/util.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/loadSelectCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/load.select.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/dicSingleCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/dic.single.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/wareEntryCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/util.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/userTeacherCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/user.teacher.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/instSupplyCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/inst.safety.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/inst.supply.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/inst.demand.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/instDemandCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/instSafetyCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/user.student.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/orderQueryCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/wareInventoryCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/collect.supplement.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/ware.inventory.html",
+		"/Users/rain/Downloads/111.html",
+		"/Users/rain/Documents/projects/git/blog/source/_posts/hello.md",
+		"/Users/rain/Documents/projects/git/blog/themes/landscape/layout/_partial/head.ejs",
+		"/Users/rain/Documents/projects/git/blog/themes/landscape/layout/_partial/after-footer.ejs",
+		"/Users/rain/Documents/projects/git/blog/.gitignore",
+		"/Users/rain/Documents/projects/git/blog/_config.yml",
+		"/Users/rain/Documents/projects/git/jekyll_demo/_site/about/index.html",
+		"/Users/rain/Documents/projects/git/jekyll_demo/_site/index.html",
+		"/Users/rain/Documents/projects/git/mansu10.github.io/Gemfile",
+		"/Users/rain/Documents/projects/git/mansu10.github.io/.gitignore",
+		"/Users/rain/Documents/projects/git/jekyll_demo/Gemfile",
+		"/Users/rain/Documents/projects/git/jekyll/Gemfile",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/ware.entry.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/ware.shelves.html",
+		"/Users/rain/Desktop/confirmbox.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/wareShelvesCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/order.query.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/ware.maintain.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/collect.storage.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/distrLoadCtrl.js",
+		"/Users/rain/Documents/projects/git/xiayayun.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/distr.load.html",
+		"/Users/rain/Documents/projects/git/lottery/lottery.html",
+		"/Users/rain/Documents/projects/git/lottery/注意事项!!!!.txt",
+		"/Users/rain/Desktop/lottery/lottery.html",
+		"/Users/rain/Desktop/lottery.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/order.audit.html",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/order.add.html",
+		"/Users/rain/Documents/projects/git/med/xiayayun.html",
+		"/Users/rain/Downloads/xiayayun.html",
+		"/Users/rain/Desktop/1.html",
+		"/Users/rain/Documents/projects/git/med/src/js/controller/distrVehicleCtrl.js",
+		"/Users/rain/Documents/projects/git/med/src/template/parts/distr.vehicle.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/rain/Documents/projects/git/med/src/js/controller",
+			"/Users/rain/Documents/projects/git/med/src/js",
+			"/Users/rain/Documents/projects/git/med/src/js/controller"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cars",
+			"stowageList",
+			"forEach",
+			"queryDispatchPlan",
+			"updateStowageList",
+			"qu er y",
+			"queryStowageList",
+			"option",
+			"OperatorServlet",
+			"da te",
+			"StowageList",
+			"stowageList",
+			"response",
+			"http",
+			"PrintList",
+			"printlist",
+			"timeout",
+			"localstorage",
+			"instruct",
+			"include_js",
+			"instruct",
+			"main-content",
+			"position: relative",
+			"$scope",
+			"$document",
+			"rootS",
+			"badge",
+			"stowageCode",
+			"orderPrintInfo",
+			"<td>",
+			"<div class=\"row\">",
+			"ng-disabled=\"!editMode\"",
+			"printOrder",
+			"col-md-2",
+			"PrintList",
+			"printlist",
+			"ng-if",
+			"#",
+			"localstorage",
+			"\t // \tvar printItemIndex = Number(getUrlParams('item'));\n",
+			"PrintCtrl",
+			"AllocateCheckCtrl",
+			"printOrder",
+			"rootscope",
+			"item",
+			"打印",
+			"#",
+			"printOrders",
+			"AllocateGoodsCtrl",
+			"code11",
+			"createbcTarget",
+			"printOrders",
+			"printOrder",
+			"alert",
+			"editMode",
+			"<input type=\"number\" class=\"form-control input-sm\">",
+			"<input type=\"text\" class=\"input-sm form-control\">",
+			"{{",
+			"distrLoad",
+			"'",
+			"捡货",
+			"xx",
+			"form-control input-sm\"",
+			"<td>",
+			"Group",
+			"<input type=\"text\" class=\"form-control input-sm\">",
+			"col-md-1",
+			"<input type=\"text\" class=\"form-control\">",
+			"page",
+			"\"\"",
+			"=\"\"",
+			"新建帐号",
+			"<input type=\"text\" class=\"form-control input-sm\">",
+			"use",
+			"addWare",
+			"&& ",
+			" && !states.addNewMode",
+			"addNewMode",
+			"XX",
+			"currentWare",
+			"$scope.currentWare",
+			"addNewMode",
+			"$scope.addNewMode",
+			"editMode",
+			"$scope.editMode",
+			"editMode",
+			"basicState",
+			"selectedList[0]",
+			"wareList[currentWare]",
+			"{{editMode}}",
+			"addNew",
+			"disabled=\"{{editMode}}",
+			"<input type=\"text\" class=\"form-control input-sm\">",
+			"disabled=\"{{editMode}}\"",
+			"<input type=\"text\" class=\"form-control input-sm\">",
+			"td",
+			"<input type=\"text\" class=\"form-control input-sm\" ng-model",
+			"{{",
+			"<p class=\"col-md-8\"></p>",
+			"{{",
+			" m-bot15",
+			"<th cla",
+			"</th>",
+			"w8",
+			"class=\"cell\"",
+			"pull-right",
+			"\t\t\t\t\t\t\n",
+			"primary",
+			"{{item.}}",
+			"$scope.vehicleList",
+			"transportList",
+			"carDetail",
+			"index",
+			"1",
+			" style=\"display:none\"",
+			"FlatTree",
+			"<div></div>",
+			"<td><div></div></td>",
+			"&nbsp;",
+			"<th colspan=\"2\">",
+			"<td>",
+			"<th>",
+			"<label for=\"\" class=\"col-md-4\">",
+			"javascript:;",
+			"<th>",
+			" class=\"numeric\"",
+			"item",
+			"detail.item"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/rain/Documents/projects/git/orders"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/admin-html/html"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/med"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/AngularJS实战第二章第七节综合应用BookStore源代码/BookStore"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/blog"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/vue-proj"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/spa/marvel"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/Vue-cnodejs-master"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/vue-shopping-master"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/vue2-demo-master"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/pha"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/vuex-dev"
+		},
+		{
+			"path": "/Users/rain/Documents/projects/git/wx"
+		},
+		{
+			"path": "/Users/rain/Downloads/运输管理"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/views/bar.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "src/routers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

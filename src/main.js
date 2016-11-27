@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueResource from 'vue-resource'
-// import store from './store'
+import store from './store'
 
 import router from './routers'
 import App from './App'
@@ -18,6 +18,7 @@ Vue.use(VueResource)
 const app = new Vue({
     el: '#app',
     router,
+    store, //注入组件，可以在全局使用$调用
     template: '<App/>',//相当于将App组件挂在到index.html中的#app id上
     components: {
         App

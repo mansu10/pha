@@ -1,16 +1,16 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>123232323</h2>
-    <ul>
-      <li v-for="p in products">
-        {{ p.title }} - {{ p.price }}
-        <br>
-        <button>
-          Add to cart
-        </button>
-      </li>
-    </ul>
+	<h1>{{ msg }}</h1>
+	<h2>123232323</h2>
+	<ul>
+	  <li v-for="p in products">
+		{{ p.title }} - {{ p.price }}
+		<br>
+		<button>
+		  Add to cart
+		</button>
+	  </li>
+	</ul>
   </div>
 </template>
 
@@ -22,6 +22,21 @@ export default {
     return {
       msg: 'bar'
     }
+  },
+  computed: {
+    ...mapGetters({
+        products: 'allProducts'
+    })
+  },
+  // computed: mapGetters({
+  // 	products: 'allProducts'
+  // }),
+  methods: {
+    ...mapActions({})
+  },
+  created () {
+    // console.log(this.$store)
+    this.$store.dispatch('getAllProducts')
   }
 }
 </script>
