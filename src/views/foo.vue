@@ -18,8 +18,9 @@ export default {
   },
   methods: {
     showConsole () {
-      console.log(Router)
+      console.log(Vue)
       Router.push('/bar')
+      // console.log(this.$route)
     }
   }
 }
