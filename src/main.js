@@ -1,12 +1,20 @@
 import Vue from 'vue'
-import VueResource from 'vue-resource'
 import store from './store'
-
+import { sync } from 'vuex-router-sync'
 import router from './routers'
+import VueResource from 'vue-resource'
 import App from './App'
-
+import * as filters from './filters'
 
 Vue.use(VueResource)
+// sync the router with the vuex store.
+// this registers `store.state.route`
+// sync(store, router)
+
+// register global utility filters.
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 
 /* eslint-disable no-new */
 // new Vue({
@@ -24,3 +32,4 @@ const app = new Vue({
         App
     }
 })
+// export { app, router, store }
