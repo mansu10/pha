@@ -7,3 +7,7 @@ export const CHECKOUT_FAILURE = 'CHECKOUT_FAILURE'
 // 以静态变量命名函数
 // 暂时只存放mutation名称
 export const RECEIVE_PRODUCTS = 'cart/RECEIVE_PRODUCTS'
+
+export const EDIT_TODO = 'todos/EDIT_TODO'
+export const TOGGLE_TODO = 'todos/TOGGLE_TODO'
+export const DELETE_TODO = 'todos/DELETE_TODO'

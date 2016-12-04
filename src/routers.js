@@ -15,6 +15,10 @@ const routes = [{
 	name: 'bar',
 	path: '/bar',
 	component: resolve => require(['./views/bar.vue'], resolve)
+},{
+	name: 'todos',
+	path: '/todos',
+	component: resolve => require(['./views/todos/index.vue'], resolve)
 }]
 
 const router = new VueRouter({

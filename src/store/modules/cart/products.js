@@ -1,4 +1,4 @@
-import shop from '../../../api/products'
+import shop from '../../api/products'
 import * as types from '../../mutation-types'
 
 // initial state
