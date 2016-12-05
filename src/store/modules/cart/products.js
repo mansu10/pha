@@ -1,4 +1,4 @@
-import shop from '../../api/products'
+import shop from '../../../api/products'
 import * as types from '../../mutation-types'
 
 // initial state
@@ -31,6 +31,13 @@ const actions = {
     shop.getProducts(products => {
       commit(types.RECEIVE_PRODUCTS, { products })
     })
+  },
+  addToCart({ commit }, product) {
+    if (product.inventory > 0) {
+      commit(types.ADD_TO_CART, {
+        id: product.id
+      })
+    }
   }
 }
 

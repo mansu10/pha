@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 import * as getters from './getters'
 import * as actions from './actions'
 import products from './modules/cart/products'
+import todos from './modules/todos/todos'
+import plugins from './plugins'
 
 Vue.use(Vuex)
 
@@ -12,8 +14,10 @@ const store = new Vuex.Store({
     getters,
     actions,
     modules: {
-        products
-    }
+        products,
+        todos
+    },
+    plugins
 })
 
 if (module.hot) {

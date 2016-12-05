@@ -7,27 +7,34 @@
 		    autofocus
 		    autocomplete="off"
 		    placeholder="What needs to be done?"
-		    @keyup.enter="">
+		    @keyup.enter="addTodo">
 		</header>
 		<!-- main section -->
-		<section class="main">
+		<section class="main"  v-show="todos.length">
 		  <input class="toggle-all"
-		    type="checkbox">
+		    type="checkbox"
+		    :checked="allChecked"
+		    @change="toggleAll({done: !allChecked})">
 		  <ul class="todo-list">
-		    <!-- <todo></todo> -->
+		    <todo v-for="todo in filteredTodos" :todo="todo"></todo>
 		  </ul>
 		</section>
 		<!-- footer -->
-		<footer class="footer">
+		<footer class="footer" v-show="todos.length">
 		  <span class="todo-count">
-		    <strong></strong>
-		     left
+		    <strong>{{ remaining }}</strong>
+		     {{ remaining | pluralize('item') }}left
 		  </span>
 		  <ul class="filters">
-		    <li>
-		    </li>
+	        <li v-for="(val, key) in filters">
+	          <a href="javascript:;" 
+	            :class="{ selected: visibility === key }"
+	            @click="visibility = key">{{ key | capitalize }}</a>
+	        </li>
 		  </ul>
-		  <button class="clear-completed">
+		  <button class="clear-completed"
+		  	  v-show="todos.length > remaining"
+			  @click="clearCompleted">
 		    Clear completed
 		  </button>
 		</footer>
@@ -35,6 +42,54 @@
 </template>
 <script>
 	import Todo from './todo.vue'
+	import { mapGetters, mapActions } from 'vuex'
+
+	const filters = {
+	  all: todos => todos,
+	  active: todos => todos.filter(todo => !todo.done),
+	  completed: todos => todos.filter(todo => todo.done)
+	}
+
+	export default {
+		components: { Todo },
+		data () {
+			return {
+				visibility: 'all',
+			    filters: filters
+			}
+		},
+		computed: {
+			...mapGetters([
+				'todos'
+			]),
+			allChecked () {
+			  return this.todos.every(todo => todo.done)
+			},
+			filteredTodos () {
+				return filters[this.visibility](this.todos)
+			},
+			remaining () {
+			  return this.todos.filter(todo => !todo.done).length
+			}
+		},
+		methods: {
+			addTodo (e) {
+				let text = e.target.value
+				if (text.trim()) {
+					this.$store.dispatch('addTodo', {text})
+				}
+				e.target.value = ''
+			},
+			...mapActions([
+				'toggleAll',
+				'clearCompleted'
+			])
+		},
+		filters: {
+			pluralize: (n, w) => n === 1 ? w : (w + 's'),
+			capitalize: s => s.charAt(0).toUpperCase() + s.slice(1)
+		}
+	}
 </script>
 <style>
 	html,
@@ -166,7 +221,7 @@
 	}
 
 	.toggle-all:before {
-		content: 'â¯';
+		content: '❯';
 		font-size: 22px;
 		color: #e6e6e6;
 		padding: 10px 27px 10px 27px;
@@ -214,6 +269,7 @@
 		/* auto, since non-WebKit browsers doesn't support input styling */
 		height: auto;
 		position: absolute;
+		left: 0;/**/
 		top: 0;
 		bottom: 0;
 		margin: auto 0;
@@ -264,7 +320,7 @@
 	}
 
 	.todo-list li .destroy:after {
-		content: 'Ã—';
+		content: '×';
 	}
 
 	.todo-list li:hover .destroy {
