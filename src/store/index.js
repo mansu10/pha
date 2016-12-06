@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import * as getters from './getters'
 import * as actions from './actions'
+import cart from './modules/cart/cart'
 import products from './modules/cart/products'
 import todos from './modules/todos/todos'
 import plugins from './plugins'
@@ -14,6 +15,7 @@ const store = new Vuex.Store({
     getters,
     actions,
     modules: {
+        cart,
         products,
         todos
     },

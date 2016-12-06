@@ -1,30 +1,30 @@
 // import { fetchItemById } from '../../api'
 import * as types from '../../mutation-types'
-export const STORAGE_KEY = 'todos-vuejs'
+
 // initial state
-const state = {
-  todos: JSON.parse(window.localStorage.getItem(STORAGE_KEY) || '[]')
+export const state = {
+  todos: JSON.parse(window.localStorage.getItem(types.STORAGE_KEY) || '[]')
 }
 
 const getters = {
 	// 两种写法之一
-  	todos: (state) => {
-  		return state.todos
-  	}/*,
-  	allChercked: state => {
-  		return state.todos.every(todo => todo.done)
-  	}*/
+  	// todos: (state) => {
+   //    console.log(state.todos)
+   //    console.log(state.todos.todos)
+  	// 	return state.todos.todos;//??????
+  	// }
+    todos: state => state.todos
 }
 const actions = {
 	// GET_ALL_TODOS ({ commit }) {
 	// 	return fetchItemById (id)
 	// 		.then(doneCallbacks, failCallbacks)
 	// },
-	addTodo ({ commit }, text) {
-		commit(types.ADD_TODO,  text )
+	addTodo ({ commit }, {text}) {
+		commit(types.ADD_TODO,  {text} )
 	},
-	toggleTodo ({ commit }, todo) {
-		commit(types.TOGGLE_TODO, todo)
+	toggleTodo ({ commit }, {todo}) {
+		commit(types.TOGGLE_TODO, {todo})
 	},
 	editTodo ({ commit }, {todo, value}) {
 		commit(types.EDIT_TODO, {todo, value})
@@ -46,6 +46,7 @@ const mutations = {
     	text,
     	done: false
     })
+    // console.log(state.todos)
   },
   [types.EDIT_TODO] (state, {todo, value}) {
   	todo.text = value
@@ -63,6 +64,7 @@ const mutations = {
     state.todos.forEach((todo) => {
       todo.done = done
     })
+        console.log(JSON.stringify(state.todos))
   },
   [types.CLEAR_COMPLETED] (state) {
   	state.todos = state.todos.filter(todo => !todo.done)

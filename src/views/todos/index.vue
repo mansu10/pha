@@ -20,6 +20,7 @@
 		  </ul>
 		</section>
 		<!-- footer -->
+
 		<footer class="footer" v-show="todos.length">
 		  <span class="todo-count">
 		    <strong>{{ remaining }}</strong>
@@ -38,11 +39,12 @@
 		    Clear completed
 		  </button>
 		</footer>
+
 	</section>
 </template>
 <script>
-	import Todo from './todo.vue'
 	import { mapGetters, mapActions } from 'vuex'
+	import Todo from './todo.vue'
 
 	const filters = {
 	  all: todos => todos,
@@ -51,6 +53,7 @@
 	}
 
 	export default {
+		name: 'todos',
 		components: { Todo },
 		data () {
 			return {
@@ -71,6 +74,7 @@
 			remaining () {
 			  return this.todos.filter(todo => !todo.done).length
 			}
+
 		},
 		methods: {
 			addTodo (e) {
