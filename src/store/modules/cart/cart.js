@@ -19,7 +19,7 @@ const actions = {
   checkout ({ commit, state }, products) {
     const savedCartItems = [...state.added]
     commit(types.CHECKOUT_REQUEST)
-    shop.buyProducts(
+    shop.buyProducts(//请求接口
       products,
       () => commit(types.CHECKOUT_SUCCESS),
       () => commit(types.CHECKOUT_FAILURE, { savedCartItems })
