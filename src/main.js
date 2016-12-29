@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import store from './store'
-import { sync } from 'vuex-router-sync'
+// import { sync } from 'vuex-router-sync'
 import router from './routers'
 import VueResource from 'vue-resource'
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+
 import App from './App'
 import * as filters from './filters'
 
@@ -10,6 +14,8 @@ Vue.use(VueResource)
 // sync the router with the vuex store.
 // this registers `store.state.route`
 // sync(store, router)
+
+Vue.use(ElementUI)
 
 // register global utility filters.
 Object.keys(filters).forEach(key => {

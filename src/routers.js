@@ -19,6 +19,10 @@ const routes = [{
 	name: 'todos',
 	path: '/todos',
 	component: resolve => require(['./views/todos/index.vue'], resolve)
+},{
+	name: 'login',
+	path: '/login',
+	component: resolve => require(['./views/login.vue'], resolve)
 }]
 
 const router = new VueRouter({
