@@ -37,6 +37,7 @@
 </script>
 
 <style>
+@import url(~/static/styles/reset.css);
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

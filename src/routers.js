@@ -1,11 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Home from './views/home.vue'
+
 Vue.use(VueRouter)
 
 const routes = [{
 	name: 'home',
-	path: '/'
+	path: '/',
+	component: Home,
+	// auth: true,
+	children: [
+		{
+			path: 'dashboard',
+			component: resolve => require(['./views/dashboard/index.vue'], resolve)
+		}
+	]
 
 },{
 	name: 'foo',
