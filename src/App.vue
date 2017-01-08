@@ -37,34 +37,16 @@
 </script>
 
 <style>
-@import url(~/static/styles/reset.css);
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    /*margin-top: 60px;*/
-}
-a {
-
-}
-a:visited {
-    color: #06c;
-}
+@import url(~/static/styles/common.css);
+@import url(~/static/styles/style.css);
 body {
-    color: #9ea7b3!important;
-    font-family:"Open Sans", Arial, sans-serif!important;
-    font-size: 13px!important;
-    line-height: 20px;
-    overflow-x: hidden!important;
-    min-height: 100%;
-    z-index: -2;
-    margin: 0px !important;
-    /*background: url('../img/bg.jpg') no-repeat top center fixed;*/
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    background: url(~/static/images/bg/bg.jpg) no-repeat top center fixed;
 }
+/*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}*/
 </style>

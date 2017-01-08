@@ -1,14 +1,16 @@
 <template>
-	<nav>
-		<div>
-			<div class="navbar-header">
+	<nav class="navbar collapsed">
+		<el-row>
+<!-- 			<div class="navbar-header">
 				<el-button type="primary" icon="edit"></el-button>
-			</div>
-			<div>
-				<el-dropdown trigger="click">
-					<span class="el-dropdown-link">
-					<i class="el-icon-caret-bottom el-icon-edit"></i>
-					</span>
+			</div> -->
+			<div class="pull-left toolbox">
+				<el-dropdown trigger="click" class="nav">
+					<el-button type="text" class="nav-btn" size="large">
+						<el-badge :value="12" :max="99" class="badge">
+							<i class="iconfont">&#xe763;</i>
+						</el-badge>
+					</el-button>
 					<el-dropdown-menu slot="dropdown">
 						<el-dropdown-item>黄金糕</el-dropdown-item>
 						<el-dropdown-item>狮子头</el-dropdown-item>
@@ -17,10 +19,12 @@
 						<el-dropdown-item>蚵仔煎</el-dropdown-item>
 					</el-dropdown-menu>
 				</el-dropdown>
-				<el-dropdown trigger="click">
-					<span class="el-dropdown-link">
-					<i class="el-icon-caret-bottom el-icon-edit"></i>
-					</span>
+				<el-dropdown trigger="click" class="nav">
+					<el-button type="text" class="nav-btn" size="large">
+						<el-badge :value="5" :max="99" class="badge">
+							<i class="iconfont">&#xe759;</i>
+						</el-badge>
+					</el-button>
 					<el-dropdown-menu slot="dropdown">
 						<el-dropdown-item>黄金糕</el-dropdown-item>
 						<el-dropdown-item>狮子头</el-dropdown-item>
@@ -29,10 +33,13 @@
 						<el-dropdown-item>蚵仔煎</el-dropdown-item>
 					</el-dropdown-menu>
 				</el-dropdown>
-				<el-dropdown trigger="click">
-					<span class="el-dropdown-link">
-					<i class="el-icon-caret-bottom el-icon-edit"></i>
-					</span>
+				<!-- <el-tooltip class="item" effect="dark" content="Bottom Center 提示文字" placement="bottom">
+					<i class="iconfont">&#xe759;</i>
+				</el-tooltip> -->
+				<el-dropdown trigger="click" class="nav">
+					<el-button type="text" class="nav-btn" size="large">
+						<i class="iconfont">&#xe759;</i>
+					</el-button>
 					<el-dropdown-menu slot="dropdown">
 						<el-dropdown-item>黄金糕</el-dropdown-item>
 						<el-dropdown-item>狮子头</el-dropdown-item>
@@ -42,97 +49,104 @@
 					</el-dropdown-menu>
 				</el-dropdown>
 			</div>
-			<div id="nt-title-container" class="navbar-left running-text visible-lg">
-			    <ul class="date-top">
-			        <li class="entypo-calendar" style="margin-right:5px"></li>
-			        <li id="Date"></li>
+			<div class="pull-left runningbox">
+				<ul class="u-date datetime">
+                    <li class="calendar"></li>
+                    <li>Sun,  1 January 2017</li>
+                </ul>
 
-
-			    </ul>
-
-			    <ul id="digital-clock" class="digital">
-			        <li class="entypo-clock" style="margin-right:5px"></li>
-			        <li class="hour"></li>
-			        <li>:</li>
-			        <li class="min"></li>
-			        <li>:</li>
-			        <li class="sec"></li>
-			        <li class="meridiem"></li>
-			    </ul>
-			    <ul id="nt-title">
-			        <li><i class="wi-day-lightning"></i>&#160;&#160;Berlin&#160;
-			            <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
-			        </li>
-			        <li><i class="wi-day-lightning"></i>&#160;&#160;Yogyakarta&#160;
-			            <b>85</b><i class="wi-fahrenheit"></i>&#160;; Tonight- 72 °F (22.2 °C)
-			        </li>
-
-			        <li><i class="wi-day-lightning"></i>&#160;&#160;Sttugart&#160;
-			            <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
-			        </li>
-
-			        <li><i class="wi-day-lightning"></i>&#160;&#160;Muchen&#160;
-			            <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
-			        </li>
-
-			        <li><i class="wi-day-lightning"></i>&#160;&#160;Frankurt&#160;
-			            <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
-			        </li>
-
-			    </ul>
+                <ul class="u-date digital">
+                    <li class="entypo-clock" style="margin-right:5px"></li>
+                    <li class="hour">13</li>
+                    <li>:</li>
+                    <li class="min">1</li>
+                    <li>:</li>
+                    <li class="sec">41</li>
+                    <li class="meridiem">PM</li>
+                </ul>		
 			</div>
-			<ul style="margin-right:0;" class="nav navbar-nav navbar-right">
-			    <li>
-			        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-			            <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/10.jpg">Hi, Dave Mattew <b class="caret"></b>
-			        </a>
-			        <ul style="margin-top:14px;" role="menu" class="dropdown-setting dropdown-menu">
-			            <li>
-			                <a href="#">
-			                    <span class="entypo-user"></span>&#160;&#160;My Profile</a>
-			            </li>
-			            <li>
-			                <a href="#">
-			                    <span class="entypo-vcard"></span>&#160;&#160;Account Setting</a>
-			            </li>
-			            <li>
-			                <a href="#">
-			                    <span class="entypo-lifebuoy"></span>&#160;&#160;Help</a>
-			            </li>
-			            <li class="divider"></li>
-			            <li>
-			                <a href="http://themeforest.net/item/apricot-navigation-admin-dashboard-template/7664475?WT.ac=category_item&WT.z_author=themesmile">
-			                    <span class="entypo-basket"></span>&#160;&#160; Purchase</a>
-			            </li>
-			        </ul>
-			    </li>
-			    <li>
-			        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-			            <span class="icon-gear"></span>&#160;&#160;Setting</a>
-			        <ul role="menu" class="dropdown-setting dropdown-menu">
-
-			            <li class="theme-bg">
-			                <div id="button-bg"></div>
-			                <div id="button-bg2"></div>
-			                <div id="button-bg3"></div>
-			                <div id="button-bg5"></div>
-			                <div id="button-bg6"></div>
-			                <div id="button-bg7"></div>
-			                <div id="button-bg8"></div>
-			                <div id="button-bg9"></div>
-			                <div id="button-bg10"></div>
-			                <div id="button-bg11"></div>
-			                <div id="button-bg12"></div>
-			                <div id="button-bg13"></div>
-			            </li>
-			        </ul>
-			    </li>
-			    <li class="hidden-xs">
-			        <a class="toggle-left" href="#">
-			            <span style="font-size:20px;" class="entypo-list-add"></span>
-			        </a>
-			    </li>
-			</ul>
-		</div>
+			<div class="pull-right settingbox">
+				<el-dropdown trigger="click" class="nav">
+					<a href="javascript:;" class="el-dropdown-link">
+					    <i class="iconfont"></i>下拉菜单
+					</a>
+					<el-dropdown-menu slot="dropdown">
+						<el-dropdown-item>黄金糕</el-dropdown-item>
+						<el-dropdown-item>狮子头</el-dropdown-item>
+						<el-dropdown-item>螺蛳粉</el-dropdown-item>
+						<el-dropdown-item>双皮奶</el-dropdown-item>
+						<el-dropdown-item>蚵仔煎</el-dropdown-item>
+					</el-dropdown-menu>
+				</el-dropdown>
+				<el-dropdown trigger="click" class="nav">
+					<a href="javascript:;" class="el-dropdown-link">
+					    <i class="iconfont"></i>下拉菜单
+					</a>
+					<el-dropdown-menu slot="dropdown">
+						<el-dropdown-item>黄金糕</el-dropdown-item>
+						<el-dropdown-item>狮子头</el-dropdown-item>
+						<el-dropdown-item>螺蛳粉</el-dropdown-item>
+						<el-dropdown-item>双皮奶</el-dropdown-item>
+						<el-dropdown-item>蚵仔煎</el-dropdown-item>
+					</el-dropdown-menu>
+				</el-dropdown>
+				<el-button>
+					<i class="iconfont"></i>
+				</el-button>
+			</div>
+		</el-row>
 	</nav>
 </template>
+
+<script>
+	
+</script>
+
+<style lang="less" scoped>
+	.navbar {
+		height: 55px;
+		overflow: hidden;
+		margin-left: 240px;
+		margin-top: 10px;
+	}
+	.nav {
+		.nav-btn {
+			padding: 15px;
+			.badge {
+				padding: 3px;
+			}
+		}
+	}
+	.toolbox {
+		.iconfont {
+			color: #fff;
+		}
+	}
+	.runningbox {
+	    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	    border: 1px solid rgba(0, 0, 0, 0.2);
+	    border-radius: 30px;
+	    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	    color: #FFFFFF;
+	    margin: 6px;
+	    padding: 10px 20px;
+	    width: 50%;
+		.digital {
+		    li {
+		    	display: inline;
+		    }
+		}	    
+	}
+	.u-date {
+		float: left;
+		border-right: 1px solid rgba(0, 0, 0, 0.4);
+		box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+		padding-right: 15px;
+	}
+	.settingbox {
+		padding: 15px 0;
+		.el-dropdown-link {
+			color: #fff;
+		}
+	}
+</style>

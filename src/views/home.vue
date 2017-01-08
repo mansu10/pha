@@ -3,20 +3,25 @@
 		<el-progress class="pace" :text-inside="true" :percentage="70" :stroke-width="3" :show-text="false"></el-progress>
 		<topnav></topnav>
 		<sidenav></sidenav>
-		<div class="wrap">
-			<div class="row">
-				<div class="pager-top">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-			</div>
-			<div>
-				<ul class="breadcrumb">
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+		<div class="paper-wrap">
+			<el-row class="row paper-head">
+				<el-col :span="6">
+					<h2 class="title">title</h2>
+				</el-col>
+				<el-col :span="14">
+					<div>info</div>
+				</el-col>
+				<el-col :span="4">
+					widget
+				</el-col>
+			</el-row>
+			<div class="breadcrumb">
+				<el-breadcrumb separator="/">
+				  <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+				  <el-breadcrumb-item>活动管理</el-breadcrumb-item>
+				  <el-breadcrumb-item>活动列表</el-breadcrumb-item>
+				  <el-breadcrumb-item>活动详情</el-breadcrumb-item>
+				</el-breadcrumb>
 				<div class="search-in"></div>
 			</div>
 			<transition name="fade" mode="out-in">
@@ -24,7 +29,7 @@
 			</transition>
 			<div class="footer">footer</div>
 		</div>
-		<slidebar></slidebar>
+		<slidebar class="slidebar"></slidebar>
 	</div>
 </template>
 <script>
@@ -55,8 +60,79 @@
 		user-select: none;
 		z-index: 2001;
 		position: fixed;
+		width: 100%;
 		margin: auto;
 		top: 0;
 		left: 0;
+		background-color: transparent;
+		&.el-progress {
+			position: fixed;
+		}
+		.el-progress-bar__outer {
+			background-color: transparent!important;
+		}
+	}
+	.paper-wrap {
+		position: relative;
+		overflow: hidden;
+		margin-left: 250px;
+		min-height: 600px;
+	    background: #f5f5f5;
+	    background: -moz-linear-gradient(45deg, #f5f5f5 30px, #f5f5f5 30px), -moz-linear-gradient(135deg, transparent 30px, #f5f5f5 30px), -moz-linear-gradient(225deg, #f5f5f5 30px, #f5f5f5 30px), -moz-linear-gradient(315deg, transparent 30px, #f5f5f5 30px);
+	    background: -o-linear-gradient(45deg, #f5f5f5 30px, #f5f5f5 30px), -o-linear-gradient(135deg, transparent 30px, #f5f5f5 30px), -o-linear-gradient(225deg, #f5f5f5 30px, #f5f5f5 30px), -o-linear-gradient(315deg, transparent 30px, #f5f5f5 30px);
+	    background: -webkit-linear-gradient(45deg, #f5f5f5 30px, #f5f5f5 30px), -webkit-linear-gradient(135deg, transparent 30px, #f5f5f5 30px), -webkit-linear-gradient(225deg, #f5f5f5 30px, #f5f5f5 30px), -webkit-linear-gradient(315deg, transparent 30px, #f5f5f5 30px);
+	    background-position: bottom left, bottom right, top right, top left;
+	    -moz-background-size: 52% 52%;
+	    -webkit-background-size: 52% 52%;
+	    background-size: 52% 52%;
+	    background-repeat: no-repeat;
+		&:before {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    border-width: 0 42px 42px 0;
+		    border-style: solid;
+		    border-color: #ffffff rgba(0, 0, 0, 0.1);
+		    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3);
+		    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3);
+		    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3);
+		    -webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		}
+		.paper-head {
+			border-bottom: 1px solid #DDDDDD;
+			padding: 0;
+			height: 50px;
+			.title {
+				margin-left: 60px;
+			}
+		}
+	}
+	.breadcrumb {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+		margin: 0;
+		overflow: hidden;
+		padding: 15px 0 15px 20px;
+		width: 100%;
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.02);
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		background: none repeat scroll 0 0 #f8f8f8;
+		border-top: 1px solid #DDDDDD;
+		bottom: 0;
+		height: 50px;
+		width: 100%;
+	}
+	.slidebar {
+		width: 200px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: none;
 	}
 </style>
