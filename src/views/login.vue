@@ -1,8 +1,8 @@
 <template>
 	<el-row type="flex" justify="space-around">
 		<el-col :span="8">
-			<el-card>
-			 	<div slot="header" >
+			<el-card class="panel">
+			 	<div slot="header" class="card-hd">
 					<span>login</span>
 			    </div>
 			    <div>
@@ -28,7 +28,8 @@
 			    </div>
 			</el-card>
 		</el-col>
-	</el-row>
+	</el-row>		
+
 </template>
 <script>
 	export default {
@@ -44,7 +45,7 @@
 	  }
 	}
 </script>
-<style>
+<style scoped>
 	.el-row {
 		margin-bottom: 20px;
 	}

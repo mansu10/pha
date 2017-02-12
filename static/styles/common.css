@@ -22,7 +22,7 @@ address,caption,cite,code,dfn,em,strong,th,var {
   font-weight:normal
 }
 body {
-    font-family: '微软雅黑','LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
+    font-family: "Open Sans",'微软雅黑','LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
     color: #292929;
     background-color: #f2f2f2;
 }
@@ -42,7 +42,7 @@ html {
   box-sizing: border-box;
 }
 input,select,textarea,button {
-    font-family: '微软雅黑','LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
+    font-family: "Open Sans",'微软雅黑','LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
     color: #636e7b;
 }
 
@@ -60,11 +60,11 @@ a:visited, a:active {
 a:focus, a:active { outline: none; }
 
 h1,h2,h3,h4,h5 {
-    font-family: '微软雅黑','LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
+    font-family: "Open Sans",'微软雅黑','LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
 }
 
 strong {
-    font-family: '微软雅黑','LatoBold';
+    font-family: "Open Sans",'微软雅黑','LatoBold';
     font-weight: normal;
 }
 

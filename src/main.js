@@ -33,9 +33,9 @@ const app = new Vue({
     el: '#app',
     router,
     store, //注入组件，可以在全局使用$调用
-    template: '<App/>',//相当于将App组件挂在到index.html中的#app id上
-    components: {
-        App
-    }
+    // template: '<App/>',//相当于将App组件挂在到index.html中的#app id上
+    // components: {
+    //     App
+    // }
+    render: h => h(App)
 })
-// export { app, router, store }

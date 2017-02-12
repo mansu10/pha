@@ -40,7 +40,8 @@
 @import url(~/static/styles/common.css);
 @import url(~/static/styles/style.css);
 body {
-    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif!important;
+    font-size: 12px;
+    font-family:"Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif!important;
     background: url(~/static/images/bg/bg.jpg) no-repeat top center fixed;
 }
 /*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {

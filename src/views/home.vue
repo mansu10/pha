@@ -2,17 +2,17 @@
 	<div>
 		<el-progress class="pace" :text-inside="true" :percentage="70" :stroke-width="3" :show-text="false"></el-progress>
 		<topnav></topnav>
-		<sidenav></sidenav>
+		<sidenav ></sidenav>
 		<div class="paper-wrap">
-			<el-row class="row paper-head">
+			<el-row class="paper-head">
 				<el-col :span="6">
-					<h2 class="title">title</h2>
+					<div class="cell title">ef</div>
 				</el-col>
 				<el-col :span="14">
-					<div>info</div>
+					<div class="cell"></div>
 				</el-col>
 				<el-col :span="4">
-					widget
+					<div class="cell"></div>
 				</el-col>
 			</el-row>
 			<div class="breadcrumb">
@@ -27,12 +27,16 @@
 			<transition name="fade" mode="out-in">
 			    <router-view></router-view>
 			</transition>
-			<div class="footer">footer</div>
+			<div class="footer">
+				<div class="copyright">2017 All Rights Reserved</div>
+			</div>
 		</div>
 		<slidebar class="slidebar"></slidebar>
 	</div>
 </template>
 <script>
+	import {mapState} from 'vuex'
+
 	import Topnav from '../components/topnav.vue'
 	import Sidenav from '../components/sidenav.vue'
 	import Slidebar from '../components/slidebar.vue'
@@ -72,6 +76,7 @@
 			background-color: transparent!important;
 		}
 	}
+
 	.paper-wrap {
 		position: relative;
 		overflow: hidden;
@@ -103,14 +108,25 @@
 		    -o-transform: rotate(-90deg);
 		}
 		.paper-head {
-			border-bottom: 1px solid #DDDDDD;
+			border-bottom: 1px solid #ddd;
 			padding: 0;
 			height: 50px;
 			.title {
-				margin-left: 60px;
+				padding-left: 60px;
+				font-size: 16px;
+				color: #9EA7B3;
+			    font-family: "Open Sans";
+			}
+			.cell {
+				height: 50px;
+				line-height: 50px;
+				border-left: 1px dashed #ddd;
+				margin-left: -1px;
+				overflow: hidden;
 			}
 		}
 	}
+
 	.breadcrumb {
 		border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 		margin: 0;
@@ -126,6 +142,7 @@
 		border-top: 1px solid #DDDDDD;
 		bottom: 0;
 		height: 50px;
+		line-height: 50px;
 		width: 100%;
 	}
 	.slidebar {
@@ -134,5 +151,14 @@
 		top: 0;
 		right: 0;
 		display: none;
+	}
+	.copyright {
+	    bottom: 0;
+	    color: #666666;
+	    float: right;
+	    font-size: 12px !important;
+	    padding: 0 15px;
+	    border-left: 1px dashed #ddd;
+	    position: relative;
 	}
 </style>
