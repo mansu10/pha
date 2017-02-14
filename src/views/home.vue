@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<el-progress class="pace" :text-inside="true" :percentage="70" :stroke-width="3" :show-text="false"></el-progress>
+		<el-progress class="pace" :text-inside="true" :percentage="progressing" :stroke-width="3" :show-text="false"></el-progress>
 		<topnav></topnav>
 		<sidenav ></sidenav>
 		<div class="paper-wrap">
@@ -35,7 +35,7 @@
 	</div>
 </template>
 <script>
-	import {mapState} from 'vuex'
+	import {mapState, mapGetters} from 'vuex'
 
 	import Topnav from '../components/topnav.vue'
 	import Sidenav from '../components/sidenav.vue'
@@ -46,6 +46,14 @@
 			return {
 
 			}
+		},
+		methods: {
+
+		},
+		computed: {
+			...mapGetters({
+				progressing: 'getProgress'
+			})
 		},
 		components: {
 			Topnav,

@@ -16,3 +16,5 @@ export const TOGGLE_ALL = 'todos/TOGGLE_ALL'
 export const DELETE_TODO = 'todos/DELETE_TODO'
 export const ADD_TODO = 'todos/ADD_TODO'
 export const CLEAR_COMPLETED = 'todos/CLEAR_COMPLETED'
+
+export const SET_PROGRESS = 'SET_PROGRESS'

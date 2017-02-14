@@ -5,6 +5,7 @@ import * as actions from './actions'
 import cart from './modules/cart/cart'
 import products from './modules/cart/products'
 import todos from './modules/todos/todos'
+import global from './modules/global/global'
 import plugins from './plugins'
 
 Vue.use(Vuex)
@@ -17,7 +18,8 @@ const store = new Vuex.Store({
     modules: {
         cart,
         products,
-        todos
+        todos,
+        global
     },
     plugins
 })
