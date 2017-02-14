@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main-wrap" :class="{'slide-active': isSlideActive}">
 		<el-progress class="pace" :text-inside="true" :percentage="progressing" :stroke-width="3" :show-text="false"></el-progress>
 		<topnav></topnav>
 		<sidenav ></sidenav>
@@ -52,7 +52,8 @@
 		},
 		computed: {
 			...mapGetters({
-				progressing: 'getProgress'
+				progressing: 'getProgress',
+				isSlideActive: 'isSlideActive'
 			})
 		},
 		components: {
@@ -152,6 +153,13 @@
 		height: 50px;
 		line-height: 50px;
 		width: 100%;
+	}
+	.main-wrap {
+		transition: all .5s;
+	}
+	.slide-active {
+		transform: translateX(-240px);
+		transition: all .5s;
 	}
 	.slidebar {
 		width: 200px;

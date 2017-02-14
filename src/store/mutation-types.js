@@ -18,3 +18,4 @@ export const ADD_TODO = 'todos/ADD_TODO'
 export const CLEAR_COMPLETED = 'todos/CLEAR_COMPLETED'
 
 export const SET_PROGRESS = 'SET_PROGRESS'
+export const TOGGLE_STATE = 'TOGGLE_STATE'

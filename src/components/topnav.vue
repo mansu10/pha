@@ -92,7 +92,7 @@
 						<el-dropdown-item>蚵仔煎</el-dropdown-item>
 					</el-dropdown-menu>
 				</el-dropdown>
-				<el-button size="mini" class="item">
+				<el-button size="mini" class="item" @click="toggleSlide">
 					<i class="iconfont">&#xe763;</i>
 				</el-button>
 			</div>
@@ -102,14 +102,32 @@
 
 <script>
 	
+	import {mapState, mapMutations} from 'vuex'
+	export default {
+		data() {
+			return {
+
+			}
+		},
+		methods: {
+			...mapMutations({
+				toggleState : 'TOGGLE_STATE'
+			}),
+			toggleSlide() {
+				this.toggleState({key: 'isSlideActive'})
+			}
+		}
+
+	}
+
 </script>
 
 <style lang="less" scoped>
 	.navbar {
-		height: 55px;
+		height: 65px;
 		overflow: hidden;
 		margin-left: 240px;
-		margin-top: 10px;
+		padding-top: 10px;
 	}
 	.nav {
 		.nav-btn {
