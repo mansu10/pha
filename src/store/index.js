@@ -2,10 +2,13 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import * as getters from './getters'
 import * as actions from './actions'
+
 import cart from './modules/cart/cart'
 import products from './modules/cart/products'
 import todos from './modules/todos/todos'
 import global from './modules/global/global'
+import user from './modules/user/index'
+
 import plugins from './plugins'
 
 Vue.use(Vuex)
@@ -19,7 +22,8 @@ const store = new Vuex.Store({
         cart,
         products,
         todos,
-        global
+        global,
+        user
     },
     plugins
 })

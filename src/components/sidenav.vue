@@ -25,24 +25,14 @@
 				<template v-for="(child,index) in parent.children">
 					<el-submenu :index="String(index+1)" v-if="child.children">
 						<template slot="title"><i :class="child.iconClass"></i>{{child.title}}</template>
-						<el-menu-item-group>
-							<template slot="title">分组一</template>
-							<el-menu-item index="1-1">选项1</el-menu-item>
-							<el-menu-item index="1-2">选项2</el-menu-item>
-						</el-menu-item-group>
-						<el-menu-item-group title="分组2">
-							<el-menu-item index="1-3">选项3</el-menu-item>
-						</el-menu-item-group>
-						<el-submenu index="1-4">
-							<template slot="title">选项4</template>
-							<el-menu-item index="1-4-1">选项1</el-menu-item>
-						</el-submenu>
+						
+						<el-menu-item index="1-3" v-for="(item,index) in child.children">{{item.title}}</el-menu-item>
 					</el-submenu>
 					<el-menu-item v-else :index="String(index+1)"><i class="el-icon-menu"></i>{{child.title}}</el-menu-item>					
 				</template>
 			</el-menu>					
 
-			<el-menu default-active="2" class="menu-nest" @open="handleOpen" @close="handleClose">
+			<el-menu default-active="2" class="menu-nest" v-show="false" @open="handleOpen" @close="handleClose">
 				<el-submenu index="1">
 					<template slot="title"><i class="el-icon-message"></i>导航一</template>
 					<el-menu-item-group>
@@ -73,18 +63,119 @@
 				menuList: [{
 					title: 'title',
 					children: [{
-						title: 'child title',
+						title: '222',
 						iconClass: 'el-icon-message',
-						children:[]
+						children:[{
+							title: '111',
+							link:''
+						},{
+							title: '1212',
+							link:''
+						},{
+							title: '1313',
+							link:''
+						}]
+					}/*{
+					title: 'title',
+					children: [{
+						title: '调剂管理',
+						iconClass: 'el-icon-message',
+						children:[{
+							title: '组柜补药',
+							link:''
+						},{
+							title: '收方发药',
+							link:''
+						},{
+							title: '调剂查询',
+							link:''
+						}]
 					},{
-						title: 'child title2',
-						iconClass: 'el-icon-menu'
+						title: '供应管理',
+						iconClass: 'el-icon-menu',
+						children:[{
+							title: '请领登记',
+							link:''
+						},{
+							title: '供应计划',
+							link:''
+						},{
+							title: '供应实施',
+							link:''
+						}]
 					},{
-						title: 'child title3',
-						iconClass: 'el-icon-menu'
+						title: '药库管理',
+						iconClass: 'el-icon-menu',
+						children:[{
+							title: '库存管理',
+							link:''
+						},{
+							title: '药材筹措',
+							link:''
+						}]
 					}]
 				},{
-					title: 'title2'
+					title: 'title2',
+					children: [{
+						title: '制剂管理',
+						iconClass: 'el-icon-message',
+						children:[{
+							title: '制剂物料',
+							link:''
+						},{
+							title: '制剂入库',
+							link:''
+						},{
+							title: '制剂发药',
+							link:''
+						}]
+					},{
+						title: '业务统计',
+						iconClass: 'el-icon-menu',
+						children:[{
+							title: '业务量统计',
+							link:''
+						},{
+							title: '消耗统计',
+							link:''
+						}]
+					},{
+						title: '药材管理',
+						iconClass: 'el-icon-menu',
+						children:[{
+							title: '药材字典',
+							link:''
+						},{
+							title: '处方接口',
+							link:''
+						}]
+					}]
+				},{
+					title: 'title2',
+					children: [{
+						title: '机构管理',
+						iconClass: 'el-icon-message',
+						children:[{
+							title: '供应机构',
+							link:''
+						},{
+							title: '需求机构',
+							link:''
+						},{
+							title: '本级组室',
+							link:''
+						}]
+					},{
+						title: '用户管理',
+						iconClass: 'el-icon-menu',
+						children:[{
+							title: '教员用户',
+							link:''
+						},{
+							title: '学员用户',
+							link:''
+						}]
+					}*/]
 				}]
 			}
 		},

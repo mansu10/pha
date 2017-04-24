@@ -14,6 +14,9 @@ const routes = [{
 		{
 			path: 'dashboard',
 			component: resolve => require(['./views/dashboard/index.vue'], resolve)
+		},{
+			path: 'institution/demand',
+			component: resolve => require(['./views/institution/demand.vue'], resolve)
 		}
 	]
 
@@ -32,12 +35,17 @@ const routes = [{
 },{
 	name: 'login',
 	path: '/login',
-	component: resolve => require(['./views/login.vue'], resolve)
+	component: resolve => require(['./views/user/login.vue'], resolve)
+},{
+	name: 'register',
+	path: '/register',
+	component: resolve => require(['./views/user/register.vue'], resolve)
 }]
 
 const router = new VueRouter({
-	mode: 'history',
+	// mode: 'history',
 	base: __dirname,
+	// base: '/pha/',
 	routes: routes,
 	scrollBehavior (to, from, savedPosition) {
 	  if (savedPosition) {
@@ -47,5 +55,5 @@ const router = new VueRouter({
 	  }
 	}
 })
-
+console.log(__dirname)
 export default router

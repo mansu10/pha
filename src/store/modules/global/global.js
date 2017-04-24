@@ -3,7 +3,17 @@ import * as types from '../../mutation-types'
 const state = {
 	sideCollappsed: false,
 	progressing: 60,
-	isSlideActive: false
+	isSlideActive: false,
+	breadcrumb:[{
+		title: 'title',
+		link: 'link'
+	},{
+		title: 'title',
+		link: 'link'
+	},{
+		title: 'title',
+		link: 'link'
+	}]
 }
 
 const getters = {
@@ -12,6 +22,9 @@ const getters = {
 	},
 	isSlideActive : (state) => {
 		return state.isSlideActive
+	},
+	getBreadcrumb: state => {
+		return state.breadcrumb
 	}
 }
 

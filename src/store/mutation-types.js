@@ -19,3 +19,11 @@ export const CLEAR_COMPLETED = 'todos/CLEAR_COMPLETED'
 
 export const SET_PROGRESS = 'SET_PROGRESS'
 export const TOGGLE_STATE = 'TOGGLE_STATE'
+export const SET_STATE = 'SET_STATE'
+
+/* user */
+/* login */
+
+
+
+
