@@ -32,9 +32,9 @@
 	      rules: {
 	      	 name: [
 	      	 	{ required: true, message: '请输入活动名称', trigger: 'blur' },
-	      	 	{ min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+	      	 	{ min: 3, max: 20, message: '长度在 3 到 20 个字符', trigger: 'blur' }
 	      	 ],
-	      	 pwd: { required: true, message: '请选择活动区域', trigger: 'change' }
+	      	 pwd: { required: true, min: 6, message: '请输入密码', trigger: 'change' }
 
 	      },
 	      isShake: false
@@ -64,10 +64,11 @@
 			            console.log(res)
 			            let data = res.body
 			            if (data.code == 1) {
-			            	sessionStorage.setItem("token", data.token)
+			            	sessionStorage.setItem("pha_token", data.token)
 			            	Router.push('/')
 			            }else{
-			            	self.formVal.pwd == ''
+			            	self.formVal.pwd = ''
+			            	dlgShake()
 			            }
 			        }, res=>{
 
@@ -75,7 +76,6 @@
 			        })
 	    			
 	    		}else{
-	    			this.isShake = true
 	    			dlgShake()
 	    		}
 	    	})

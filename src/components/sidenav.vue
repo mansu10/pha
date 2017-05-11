@@ -15,18 +15,18 @@
 			</el-input>
 		</div>
 		<div class="m-menus">
-			<el-menu  v-for="parent in menuList" default-active="1" class="menu-nest" @open="handleOpen" @close="handleClose">
+			<el-menu  v-for="(parent,idx1) in menuList" default-active="1" class="menu-nest" @open="handleOpen" @close="handleClose">
 				<div class="menu-head">
 					<span class="tt">{{parent.title}}</span>
 					<el-tooltip class="item pull-right" effect="light" content="Top Left 提示文字" placement="top-start">
 					    <i class="iconfont">&#xe72d;</i>
 					</el-tooltip>
 				</div>
-				<template v-for="(child,index) in parent.children">
-					<el-submenu :index="String(index+1)" v-if="child.children">
+				<template v-for="(child,idx2) in parent.children">
+					<el-submenu :index="String(idx1+1)+'-'+String(idx2+1)" v-if="child.children">
 						<template slot="title"><i :class="child.iconClass"></i>{{child.title}}</template>
 						
-						<el-menu-item index="1-3" v-for="(item,index) in child.children">{{item.title}}</el-menu-item>
+						<el-menu-item :index="String(idx2+1)+'-'+String(idx3)" v-for="(item,idx3) in child.children"><div @click="goPage(item.link)">{{item.title}}</div></el-menu-item>
 					</el-submenu>
 					<el-menu-item v-else :index="String(index+1)"><i class="el-icon-menu"></i>{{child.title}}</el-menu-item>					
 				</template>
@@ -57,37 +57,23 @@
 
 </template>
 <script>
+	import router from 'src/routers'
 	export default {
 		data(){
 			return {
 				menuList: [{
 					title: 'title',
 					children: [{
-						title: '222',
+						title: '综合管理',
 						iconClass: 'el-icon-message',
 						children:[{
-							title: '111',
+							title: '药房业务量统计',
 							link:''
 						},{
-							title: '1212',
+							title: '组室消耗统计',
 							link:''
 						},{
-							title: '1313',
-							link:''
-						}]
-					}/*{
-					title: 'title',
-					children: [{
-						title: '调剂管理',
-						iconClass: 'el-icon-message',
-						children:[{
-							title: '组柜补药',
-							link:''
-						},{
-							title: '收方发药',
-							link:''
-						},{
-							title: '调剂查询',
+							title: '下级需求统计',
 							link:''
 						}]
 					},{
@@ -102,15 +88,24 @@
 						},{
 							title: '供应实施',
 							link:''
-						}]
-					},{
-						title: '药库管理',
-						iconClass: 'el-icon-menu',
-						children:[{
+						},{
 							title: '库存管理',
 							link:''
 						},{
 							title: '药材筹措',
+							link:''
+						}]
+					},{
+						title: '调剂管理',
+						iconClass: 'el-icon-message',
+						children:[{
+							title: '组柜补药',
+							link:''
+						},{
+							title: '收方发药',
+							link:''
+						},{
+							title: '调剂查询',
 							link:''
 						}]
 					}]
@@ -130,52 +125,38 @@
 							link:''
 						}]
 					},{
-						title: '业务统计',
-						iconClass: 'el-icon-menu',
-						children:[{
-							title: '业务量统计',
-							link:''
-						},{
-							title: '消耗统计',
-							link:''
-						}]
-					},{
-						title: '药材管理',
+						title: '基础数据',
 						iconClass: 'el-icon-menu',
 						children:[{
 							title: '药材字典',
-							link:''
+							link:'dictionary'
+						}]
+					},{
+						title: '保障关系',
+						iconClass: 'el-icon-message',
+						children:[{
+							title: '供应机构',
+							link:'supply'
 						},{
-							title: '处方接口',
-							link:''
+							title: '需求机构',
+							link:'demand'
+						},{
+							title: '本级组室',
+							link:'sibling'
 						}]
 					}]
 				},{
 					title: 'title2',
 					children: [{
-						title: '机构管理',
-						iconClass: 'el-icon-message',
-						children:[{
-							title: '供应机构',
-							link:''
-						},{
-							title: '需求机构',
-							link:''
-						},{
-							title: '本级组室',
-							link:''
-						}]
-					},{
 						title: '用户管理',
-						iconClass: 'el-icon-menu',
-						children:[{
+						children: [{
+							title: '学员用户',
+							link:'student'
+						},{
 							title: '教员用户',
 							link:''
-						},{
-							title: '学员用户',
-							link:''
 						}]
-					}*/]
+					}]
 				}]
 			}
 		},
@@ -185,6 +166,10 @@
 			},
 			handleClose(key, keyPath) {
 				console.log(key, keyPath);
+			},
+			goPage(link){
+				router.push({ name: link})
+				console.log(666)
 			}
 		}
 	}

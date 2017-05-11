@@ -24,9 +24,12 @@
 				</el-breadcrumb>
 				<div class="search-in"></div>
 			</div>
-			<transition name="fade" mode="out-in">
-			    <router-view></router-view>
-			</transition>
+			<div class="main-cnt">
+				<transition name="fade" mode="out-in">
+				    <router-view></router-view>
+				</transition>				
+			</div>
+
 			<div class="footer">
 				<div class="copyright">2017 All Rights Reserved</div>
 			</div>
@@ -157,6 +160,9 @@
 	}
 	.main-wrap {
 		transition: all .5s;
+	}
+	.main-cnt {
+		margin-bottom: 50px;
 	}
 	.slide-active {
 		transform: translateX(-240px);

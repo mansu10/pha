@@ -1,0 +1,1 @@
+export const SET_SUPPLY_LIST = 'SET_SUPPLY_LIST'

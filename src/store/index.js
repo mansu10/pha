@@ -8,6 +8,7 @@ import products from './modules/cart/products'
 import todos from './modules/todos/todos'
 import global from './modules/global/global'
 import user from './modules/user/index'
+import institution from './modules/institution/index'
 
 import plugins from './plugins'
 
@@ -23,7 +24,8 @@ const store = new Vuex.Store({
         products,
         todos,
         global,
-        user
+        user,
+        institution
     },
     plugins
 })
