@@ -9,9 +9,22 @@ export function fetchSupplement(data){
 	
 	return Vue.http.post(obj.url, obj.data, obj.option)
 }
+
+export function addSupplement(data){
+	let obj = createBody(url.addSupply, data)
+
+	return Vue.http.post(obj.url, obj.data, obj.option)
+}
+
 export function fetchDemand(data){
 
 	let obj = createBody(url.demandAgency, data)
+
+	return Vue.http.post(obj.url, obj.data, obj.option)
+}
+
+export function addDemand(data){
+	let obj = createBody(url.addDemand, data)
 
 	return Vue.http.post(obj.url, obj.data, obj.option)
 }

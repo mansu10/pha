@@ -22,8 +22,12 @@ const routes = [{
         path: 'institution/demand',
         component: resolve => require(['./views/institution/demand.vue'], resolve)
     }, {
+        name: 'demandDetail',
+        path: 'institution/demand/detail/:option',
+        component: resolve => require(['./views/institution/demandDetail.vue'], resolve)
+    }, {
         name: 'institutionDetail',
-        path: 'institution/detail',
+        path: 'institution/detail/:option',
         component: resolve => require(['./views/institution/detail.vue'], resolve)
     }, {
         name: 'dictionary',

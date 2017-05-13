@@ -1,1 +1,4 @@
 export const SET_SUPPLY_LIST = 'SET_SUPPLY_LIST'
+export const SET_DEMAND_LIST = 'SET_DEMAND_LIST'
+
+export const SET_LOADING = 'SET_LOADING'

@@ -60,6 +60,8 @@
 		<el-card class="panel">
 			<div slot="header">
 				<span>供应站岗位设置</span>
+				<el-button type="danger" size="small">删除</el-button>
+				<el-button type="danger" size="small">删除</el-button>
 			</div>
 			<el-table border :data="tableData">
 				<el-table-column label="选择" width="80">
