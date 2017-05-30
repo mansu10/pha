@@ -6,10 +6,10 @@
 		    </div>
 			<el-form label-width="85px" :rules="rules" :model="formVal" ref="ruleForm">
 				<el-form-item label="用户名" prop="name">
-					<el-input v-model="formVal.name" placeholder="请输入用户名" class="ipt"></el-input>
+					<el-input v-model="formVal.name" @keyup.enter.native="triggerLogin('ruleForm')" placeholder="请输入用户名" class="ipt"></el-input>
 				</el-form-item>
 				<el-form-item label="密码" prop="pwd">
-					<el-input type="password" v-model="formVal.pwd" placeholder="请输入密码" class="ipt"></el-input>
+					<el-input type="password" v-model="formVal.pwd" placeholder="请输入密码" @keyup.enter.native="triggerLogin('ruleForm')" class="ipt"></el-input>
 				</el-form-item>
 				<el-form-item>
 					<el-button type="primary" size="small" @click="triggerLogin('ruleForm')">登录</el-button>
@@ -34,7 +34,7 @@
 	      	 	{ required: true, message: '请输入活动名称', trigger: 'blur' },
 	      	 	{ min: 3, max: 20, message: '长度在 3 到 20 个字符', trigger: 'blur' }
 	      	 ],
-	      	 pwd: { required: true, min: 6, message: '请输入密码', trigger: 'change' }
+	      	 pwd: { required: true, message: '请输入密码', trigger: 'change' }
 
 	      },
 	      isShake: false
@@ -65,13 +65,18 @@
 			            let data = res.body
 			            if (data.code == 1) {
 			            	sessionStorage.setItem("pha_token", data.token)
-			            	Router.push('/')
+			            	let fromUrl = this.$route.query.f || ''
+			            	if (fromUrl) {
+			            		Router.push(fromUrl)
+			            	}else{
+			            		Router.push('/')
+			            	}
+			            	
 			            }else{
 			            	self.formVal.pwd = ''
 			            	dlgShake()
 			            }
-			        }, res=>{
-
+			        }, err=>{
 			        	dlgShake()
 			        })
 	    			

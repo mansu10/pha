@@ -104,3 +104,9 @@ img {
 .pull-right {
   float: right;
 }
+.panel {
+  margin-top: 25px;
+}
+.panel-header {
+  line-height: 28px;
+}

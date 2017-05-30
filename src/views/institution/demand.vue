@@ -14,19 +14,22 @@
 					</el-select>
 				</el-form-item>
 				<el-form-item>
-					<el-button type="primary" size="small" @click="fetchDemandList(formData)">查询</el-button>
+					<el-button type="info" size="small" @click="fetchDemandList(formData)">查询</el-button>
 				</el-form-item>
 			</el-form>
 		</el-card>
-		<el-card>
-			<el-button type="primary" size="small" @click="goAddNew">新增</el-button>
-			<el-button type="danger" size="small">删除</el-button>
+		<el-card class="panel">
+			<el-button-group>
+				<el-button type="info" size="small" @click="goAddNew">新增</el-button>
+				<el-button type="danger" size="small" @click="deleteItem">删除</el-button>
+			</el-button-group>
 		</el-card>
 		<el-row>
 				<el-col :span="24">
 					<el-table 
 						border
-						:data="getPageData">
+						:data="getPageData"
+						@selection-change="selectionChange">
 						<el-table-column
 						  type="selection"
 						  label="选择"
@@ -67,8 +70,9 @@
 						  label="操作"
 						  width="100">
 						  <template scope="scope">
-						    <el-button type="text" size="small" @click="goDetail">查看</el-button>
-						    <el-button type="text" size="small">编辑</el-button>
+						  <el-button type="text" size="small" @click="goEdit(scope.$index, scope.row)">修改</el-button>
+						    <!-- <el-button type="text" size="small" @click="goDetail">明细</el-button> -->
+						    
 						  </template>
 						</el-table-column>
 					</el-table>
@@ -88,8 +92,9 @@
 
 	</template>
 <script>
-	import {mapActions, mapState} from 'vuex'
-	import router from 'src/routers'
+	import {mapActions, mapMutations, mapState} from 'vuex'
+	import Route from 'src/routers'
+	import { Message } from 'element-ui'
 	export default {
 		data(){
 			return{
@@ -97,17 +102,26 @@
 					title: '',
 					cate: ''
 				},
+				selectionList: [],
 				pageSize: 15,
 				pageIndex: 0
 			}
 		},
 		mounted(){
+			if (this.isReload) {
+				let keyword = this.queryKeyword
+				// this.formData = {...keyword}
+				this.fetchDemandList(this.formData)
+			}
 			// this.fetchDemandList()
+			// this.setCurrentPage()
 		},
 		computed: {
 			...mapState({
 				tableData: state => state.institution.demandTable,
-				isLoading: state => state.institution.isDemandLoading
+				isLoading: state => state.institution.isDemandLoading,
+				isReload: state => state.institution.isReload,
+				queryKeyword: state => state.institution.queryKeyword
 			}),
 			getPageData(){
 				return this.tableData.slice(this.pageIndex * this.pageSize, (this.pageIndex + 1)*this.pageSize)
@@ -122,17 +136,70 @@
 		},
 		methods: {
 			...mapActions({
-				fetchDemandList: 'fetchDemandList'
+				fetchDemandList: 'fetchDemandList',
+				deleteDemand: 'deleteDemand'
+			}),
+			...mapMutations({
+				saveKeyword: 'SET_QUERY_KEYWORD'
 			}),
 			goDetail(){
 				console.log(333)
-				router.push({name: 'institutionDetail', params: { option: '123' }})
+				
 			},
 			goAddNew(){
-				router.push({name: 'demandDetail', params: { option: 'add' }})
+				Route.push({name: 'demandDetail', params: { option: 'add' }})
+			},
+			goEdit(index,row){
+				console.log(index)
+				console.log(row)
+				this.saveKeyword(this.formData)
+				let id = row.id
+				Route.push({name: 'demandDetail', params: { option: 'edit' }, query: { id: id }})
 			},
 			currentChange(val){
 				this.pageIndex = val - 1
+				Route.push({query:{page: val}})
+			},
+			setCurrentPage(){
+				let page = Route.query.page
+				if (page) {
+					
+				}else{
+					Route.push({query:{page: 1}})
+				}
+			},
+			deleteItem(){
+
+				let items = this.selectionList.map((item)=>item.id)
+				
+				this.deleteDemand(items).then((res)=>{
+					let data = res.data
+					if (data.code == 1) {
+						Message({
+					      showClose: true,
+					      message: '删除成功',
+					      type: 'success'
+					    })
+					}else{
+						Message({
+					      showClose: true,
+					      message: '删除出错',
+					      type: 'error',
+					      duration: 0
+					    })
+					}
+				}, (err)=>{
+					Message({
+				      showClose: true,
+				      message: '删除出错',
+				      type: 'error',
+				      duration: 0
+				    })
+				})
+			},
+			selectionChange(val){
+				this.selectionList = val
+				console.log(val)
 			}
 		}
 	}

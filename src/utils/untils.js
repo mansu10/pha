@@ -30,3 +30,7 @@ const fmtDate = (date, fmt) => { //author: meizz
 const errorCallback = (response) => {
     return alert(123123123)
 }
+
+export default rules = {
+    name: {}
+}

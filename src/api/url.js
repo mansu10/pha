@@ -8,7 +8,17 @@ module.exports = {
 	/* 机构管理 */
 	supplyAgency: `${HOST}/supplyAgency/queryAllSupplyAgencys.action`,
 	addSupply: `${HOST}/supplyAgency/addSupplyAgency.action`,
+	updateSupply: `${HOST}/supplyAgency/updateSupplyAgency.action`,
+	deleteSupply: `${HOST}/supplyAgency/deleteSupplyAgency.action`,
+
 	demandAgency: `${HOST}/demandAgency/queryAllDemandAgencys.action`,
 	addDemand: `${HOST}/demandAgency/addDemandAgency.action`,
-	updateDemand: `${HOST}/demandAgency/updateDemandAgency.action`
+	updateDemand: `${HOST}/demandAgency/updateDemandAgency.action`,
+	deleteDemand: `${HOST}/demandAgency/deleteDemandAgency.action`,
+
+	/* 药材字典 */
+	getDictionary: `${HOST}/product/queryAllProducts.action`
+
+
+	
 }

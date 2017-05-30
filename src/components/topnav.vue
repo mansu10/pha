@@ -66,14 +66,14 @@
                 </ul>		
 			</div>
 			<div class="pull-right settingbox">
-				<el-dropdown trigger="click" class="item">
+				<el-dropdown trigger="click" class="item" @command="userAction">
 					<a href="javascript:;" class="el-dropdown-link">
 					    <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/10.jpg">
 					    <span>Hi, Dave</span>
 					    <b class="caret"></b>
 					</a>
 					<el-dropdown-menu slot="dropdown">
-						<el-dropdown-item>黄金糕</el-dropdown-item>
+						<el-dropdown-item command="logout">退出</el-dropdown-item>
 						<el-dropdown-item>狮子头</el-dropdown-item>
 						<el-dropdown-item>螺蛳粉</el-dropdown-item>
 						<el-dropdown-item>双皮奶</el-dropdown-item>
@@ -103,6 +103,7 @@
 <script>
 	
 	import {mapState, mapMutations} from 'vuex'
+	import Route from 'src/routers'
 	export default {
 		data() {
 			return {
@@ -115,6 +116,15 @@
 			}),
 			toggleSlide() {
 				this.toggleState({key: 'isSlideActive'})
+			},
+			userAction(command){
+				let cmd = command
+				if (cmd == 'logout') {
+					console.log('logout')
+					sessionStorage.removeItem("pha_token")
+					Route.push({name: 'login'})
+				}
+				
 			}
 		}
 

@@ -17,6 +17,10 @@ const routes = [{
         name: 'supply',
         path: 'institution/supply',
         component: resolve => require(['./views/institution/supply.vue'], resolve)
+    },{
+        name: 'supplyDetail',
+        path: 'institution/supply/detail/:option',
+        component: resolve => require(['./views/institution/supply-detail.vue'], resolve)
     }, {
         name: 'demand',
         path: 'institution/demand',
@@ -24,11 +28,7 @@ const routes = [{
     }, {
         name: 'demandDetail',
         path: 'institution/demand/detail/:option',
-        component: resolve => require(['./views/institution/demandDetail.vue'], resolve)
-    }, {
-        name: 'institutionDetail',
-        path: 'institution/detail/:option',
-        component: resolve => require(['./views/institution/detail.vue'], resolve)
+        component: resolve => require(['./views/institution/demand-detail.vue'], resolve)
     }, {
         name: 'dictionary',
         path: 'dictionary',
@@ -78,14 +78,18 @@ const router = new VueRouter({
     }
 })
 router.beforeEach((to, from, next) => {
-	if (to.fullPath == '/login' || to.fullPath == '/register') {
+
+	if (to.path == '/login' || to.path == '/register') {
 		next()
 	}else if (!sessionStorage.getItem('pha_token')) {
-        next({ path: '/login'})
+        next({ path: '/login', query:{f:from}})
     } else {
         next()
-    }		
-	
+    }
+    // TODOS
+    // {path: '/404'}
+	// 来的路径为login
+    // f路径为login
 		
 
 })
