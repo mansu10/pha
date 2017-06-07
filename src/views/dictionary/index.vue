@@ -12,7 +12,7 @@
 					</el-select>
 				</el-form-item>
 				<el-form-item>
-					<el-button type="primary">查询</el-button>
+					<el-button type="primary" @click="fetchList">查询</el-button>
 				</el-form-item>
 			</el-form>
 		</el-card>
@@ -23,73 +23,73 @@
 						:data="tableData">
 						<el-table-column
 						  fixed="left"
-						  prop="date"
+						  type="selection"
 						  label="选择"
 						  width="80">
 						</el-table-column>
 						<el-table-column
 						  fixed="left"
-						  prop="date"
+						  type="index"
 						  label="序号"
 						  width="80">
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="herbsType"
 							label="综合类型"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="firstLevel"
 							label="一级类"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="secondLevel"
 							label="二级类"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="productCode"
 							label="标识码"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="controlCode"
 							label="对照码"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="ordinaryName"
 							label="通用名"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="productName"
 							label="商品名"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="specifications"
 							label="规格"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="model"
 							label="型号"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="manufactor"
 							label="厂家"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="unit"
 							label="计量单位"
 							width="120">	
 						</el-table-column>
 						<el-table-column  
-							prop="name"
+							prop="maxConversionRatio"
 							label="转换比"
 							width="120">	
 						</el-table-column>
@@ -104,28 +104,53 @@
 						</el-table-column>
 					</el-table>
 				</el-col>
+				<el-col v-show="tableData.length">
+					<el-pagination
+					  
+					  @current-change="currentChange"
+					  :current-page="1"
+					  :page-size="20"
+					  layout="total, prev, pager, next"
+					  :total="3">
+					</el-pagination>
+				</el-col>
 			</el-row>
 		</div>		
 
 	</template>
 <script>
 	import router from 'src/routers'
+	import { mapState, mapActions } from 'vuex'
 	export default {
 		data(){
 			return{
 				formData: {
 					title: '',
-					cate: ''
-				},
-				tableData: [{
-
-				}]
+					cate: '',
+					cur: 0,
+					size: 20
+				}
 			}
 		},
+		computed: {
+			...mapState({
+				tableData: state => state.dictionary.dictionaryTable
+			})
+		},
 		methods: {
+			...mapActions({
+				fetchDictionary: 'fetchDictionary'
+			}),
 			goDetail(){
 				router.push({name: 'dictionaryDetail'})
+			},
+			fetchList(){
+				this.fetchDictionary(this.formData)
+			},
+			currentChange(val){
+
 			}
+
 		}
 	}
 </script>

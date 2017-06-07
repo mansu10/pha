@@ -1,0 +1,1 @@
+export const SET_DIC_ITEM = 'dic/SET_DIC_ITEM'

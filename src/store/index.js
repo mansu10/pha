@@ -9,6 +9,7 @@ import todos from './modules/todos/todos'
 import global from './modules/global/global'
 import user from './modules/user/index'
 import institution from './modules/institution/index'
+import dictionary from './modules/dictionary/index'
 
 import plugins from './plugins'
 
@@ -25,7 +26,8 @@ const store = new Vuex.Store({
         todos,
         global,
         user,
-        institution
+        institution,
+        dictionary
     },
     plugins
 })

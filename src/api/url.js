@@ -17,7 +17,10 @@ module.exports = {
 	deleteDemand: `${HOST}/demandAgency/deleteDemandAgency.action`,
 
 	/* 药材字典 */
-	getDictionary: `${HOST}/product/queryAllProducts.action`
+	getDictionary: `${HOST}/product/queryAllProducts.action`,
+	addDictionary: `${HOST}/product/addProduct.action`,
+	updateDictionary: `${HOST}/product/updateProduct.action`,
+	deleteDictionary: `${HOST}/product/deleteProduct.action`
 
 
 	
